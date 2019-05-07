@@ -8,8 +8,8 @@ public class KillTarget : MonoBehaviour {
 	public float timeToSelect = 3.0f;
 	public int score;
 
-	// private ParticleSystem.EmissionModule hitEffectEmission;
-	// private float countDown;
+	private ParticleSystem.EmissionModule hitEffectEmission;
+	private float countDown;
 
 	// Use this for initialization
 	void Start () {
