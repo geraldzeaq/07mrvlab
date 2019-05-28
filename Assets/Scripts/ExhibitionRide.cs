@@ -34,9 +34,10 @@ public class ExhibitionRide : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		transform.position = new Vector3 (xCurve.Evaluate
-			(Time.time), transform.position.y, zCurve.Evaluate
-			(Time.time));
+		transform.position = new Vector3 (
+			xCurve.Evaluate(Time.time),
+			transform.position.y,
+			zCurve.Evaluate(Time.time));
 		Quaternion rot = transform.rotation;
 		rot.y = rCurve.Evaluate (Time.time);
 		transform.rotation = rot;
